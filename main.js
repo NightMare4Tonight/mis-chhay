@@ -5,7 +5,7 @@ import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/cont
 // import * as dat from "dat.gui"
 
 //initializing a gui
-const gui = new dat.GUI()
+// const gui = new dat.GUI()
 const world = {
   plane: {
     width: 400,
@@ -16,10 +16,10 @@ const world = {
 }
 
 //adding the gui in, we can disable it after we finalized what we want
-gui.add(world.plane, "width", 1, 500).onChange(generatePlane)
-gui.add(world.plane, "height", 1, 500).onChange(generatePlane)
-gui.add(world.plane, "widthSegments", 1, 100).onChange(generatePlane)
-gui.add(world.plane, "heightSegments", 1, 100).onChange(generatePlane)
+// gui.add(world.plane, "width", 1, 500).onChange(generatePlane)
+// gui.add(world.plane, "height", 1, 500).onChange(generatePlane)
+// gui.add(world.plane, "widthSegments", 1, 100).onChange(generatePlane)
+// gui.add(world.plane, "heightSegments", 1, 100).onChange(generatePlane)
 
 //generate the field/plane
 function generatePlane() {
@@ -94,8 +94,8 @@ renderer.setPixelRatio(devicePixelRatio)
 document.body.appendChild(renderer.domElement)
 
 //adding in the ability to control the plane
-new OrbitControls(camera, renderer.domElement)
-camera.position.z = 50
+// new OrbitControls(camera, renderer.domElement)
+camera.position.z = 65
 
 //initialize the plane with the value that we declare with the gui
 const planeGeometry = new THREE.PlaneGeometry(
