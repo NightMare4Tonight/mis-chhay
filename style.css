@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&family=Share+Tech+Mono&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.white-text {
+  color: white;
+}
+
+.smallfix {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.font-new {
+  font-family: "New Tegomin", serif;
+}
+.font-mono {
+  font-family: "Share Tech Mono", monospace;
+}
