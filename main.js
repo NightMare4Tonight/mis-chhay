@@ -4,6 +4,12 @@ import * as THREE from "https://unpkg.com/three@0.127.0/build/three.module.js"
 import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/controls/OrbitControls.js"
 // import * as dat from "dat.gui"
 
+//function for going to a new page
+function nextPage() {
+  setTimeout(500)
+  window.location.href = "./sub-site/home.html"
+}
+
 //initializing a gui
 // const gui = new dat.GUI()
 const world = {
@@ -310,6 +316,9 @@ document.querySelector("#title-ref").addEventListener("click", (e) => {
     ease: "expo.in",
     duration: 2,
     delay: 1.85,
+    onComplete: () => {
+      nextPage()
+    },
   })
 })
 
