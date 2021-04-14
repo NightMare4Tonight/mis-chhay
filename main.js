@@ -7,7 +7,7 @@ import { OrbitControls } from "https://unpkg.com/three@0.127.0/examples/jsm/cont
 //function for going to a new page
 function nextPage() {
   setTimeout(500)
-  window.location.href = "home.html"
+  window.location.href = "./sub-site/home.html"
 }
 
 //initializing a gui
