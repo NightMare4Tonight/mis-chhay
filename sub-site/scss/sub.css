@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  color: #000;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .headerContainer {
+  width: 50vw;
+  height: auto;
+  margin-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.8vw;
+  font-family: "Annie Use Your Telescope", serif;
+  text-align: center;
+}
+
+.container .headerContainer span {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 5px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.container h2 {
+  position: relative;
+}
+
+.container h2::before {
+  content: "";
+  position: absolute;
+}
+
+.container .bodyContainer {
+  font-family: "Poppins", sans-serif;
+}
+
+.container .bodyContainer h2 {
+  vertical-align: middle;
+  margin-top: 5vh;
+  margin-bottom: 3vh;
+  margin-left: 10vw;
+  font-size: 2.25rem;
+}
+
+.container .bodyContainer p {
+  width: 10ch;
+  margin-top: 1rem;
+  margin-left: 5vw;
+  margin-right: 10vw;
+  font-size: 1.2rem;
+}
+
+.center {
+  position: fixed;
+  top: 70%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.btn {
+  position: relative;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg, #d65db1, #ff6f91);
+  color: white;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 20px 40px;
+  font-size: 22px;
+  font-family: "Limelight", cursive;
+}
+
+.btn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn:before {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  background: linear-gradient(45deg, #d65db1, #ff6f91);
+  border: 0;
+  border-radius: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.btn:hover {
+  left: 12px;
+  top: 10px;
+  background: linear-gradient(45deg, #ff6f91, #ff9671);
+  color: #fff;
+}
+
+.btn:hover:before {
+  left: -12px;
+  top: -10px;
+  background: #ff9671;
+}
+
+.btn,
+.btn:before {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+#section0 {
+  background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #10548f !important;
+}
+
+.fp-viewing-section1 #fp-nav ul li a span {
+  background: red !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  p {
+    width: 18ch !important;
+  }
+  .center {
+    top: 92% !important;
+    left: 30%;
+  }
+  .center .btn {
+    background: linear-gradient(45deg, #845ec2, #d65db1);
+  }
+  .center .btn::before {
+    background: linear-gradient(45deg, #845ec2, #d65db1);
+  }
+  .center .btn:hover {
+    background: linear-gradient(45deg, #d65db1, #ff6f91);
+  }
+  .center .btn:hover::before {
+    background: #ff9671;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  p {
+    width: 30ch !important;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  p {
+    width: 45ch !important;
+  }
+  .center {
+    top: 65%;
+    left: 14%;
+  }
+  .center .btn {
+    background: linear-gradient(45deg, #d65db1, #ff6f91);
+  }
+  .center .btn::before {
+    background: linear-gradient(45deg, #d65db1, #ff6f91);
+  }
+  .center .btn:hover {
+    background: linear-gradient(45deg, #ff6f91, #ff9671);
+  }
+  .center .btn:hover::before {
+    background: #ff9671;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  p {
+    width: 45ch !important;
+  }
+}
+
+@media screen and (min-width: 1201px) {
+  p {
+    width: 50ch !important;
+  }
+}
+/*# sourceMappingURL=sub.css.map */

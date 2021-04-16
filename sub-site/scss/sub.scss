@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Limelight&display=swap");
+
+$main-font: "Annie Use Your Telescope", serif;
+$sec-font: "Poppins", sans-serif;
+$prim-color: #fff;
+$prim-bg: #000;
+$btn-font: "Limelight", cursive;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: $prim-bg;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+
+  .headerContainer {
+    width: 50vw;
+    height: auto;
+    margin-top: 10vh;
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: 0.8vw;
+    font-family: $main-font;
+    text-align: center;
+
+    span {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 5px;
+      display: inline-flex;
+      overflow: hidden;
+    }
+  }
+
+  h2 {
+    position: relative;
+  }
+
+  h2::before {
+    content: "";
+    position: absolute;
+  }
+
+  .bodyContainer {
+    font-family: $sec-font;
+    h2 {
+      vertical-align: middle;
+      margin-top: 5vh;
+      margin-bottom: 3vh;
+      margin-left: 10vw;
+      // margin-right: 83vw;
+      font-size: 2.25rem;
+    }
+    p {
+      width: 10ch;
+      margin-top: 1rem;
+      margin-left: 5vw;
+      margin-right: 10vw;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+// .frame {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   width: 400px;
+//   height: 400px;
+//   margin-top: -200px;
+//   margin-left: -200px;
+//   box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+//   overflow: hidden;
+//   color: #333;
+//   font-family: $btn-font;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }
+
+.center {
+  position: fixed;
+  top: 70%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  position: relative;
+  left: 0;
+  top: 0;
+  background: linear-gradient(45deg, #d65db1, #ff6f91);
+  color: white;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  outline: 0;
+  padding: 20px 40px;
+  font-size: 22px;
+  font-family: $btn-font;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.btn:before {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  background: linear-gradient(45deg, #d65db1, #ff6f91);
+  border: 0;
+  border-radius: 0;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.btn:hover {
+  left: 12px;
+  top: 10px;
+  background: linear-gradient(45deg, #ff6f91, #ff9671);
+  color: #fff;
+}
+
+.btn:hover:before {
+  left: -12px;
+  top: -10px;
+  background: #ff9671;
+}
+
+.btn,
+.btn:before {
+  transition: all 0.3s linear;
+}
+
+#section0 {
+  background: -webkit-linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+  background: linear-gradient(
+    45deg,
+    #845ec2,
+    #d65db1,
+    #ff6f91,
+    #ff9671,
+    #ffc75f,
+    #f9f871
+  );
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #10548f !important;
+}
+
+.fp-viewing-section1 #fp-nav ul li a span {
+  background: red !important;
+}
+
+//for phone
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  p {
+    width: 18ch !important;
+  }
+  .center {
+    top: 92% !important;
+    left: 30%;
+
+    .btn {
+      background: linear-gradient(45deg, #845ec2, #d65db1);
+    }
+    .btn::before {
+      background: linear-gradient(45deg, #845ec2, #d65db1);
+    }
+    .btn:hover {
+      background: linear-gradient(45deg, #d65db1, #ff6f91);
+    }
+    .btn:hover::before {
+      background: #ff9671;
+    }
+  }
+}
+
+//for ipad/tablet
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  p {
+    width: 30ch !important;
+  }
+}
+
+//small screen and laptop
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  p {
+    width: 45ch !important;
+  }
+  .center {
+    top: 65%;
+    left: 14%;
+
+    .btn {
+      background: linear-gradient(45deg, #d65db1, #ff6f91);
+    }
+
+    .btn::before {
+      background: linear-gradient(45deg, #d65db1, #ff6f91);
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #ff6f91, #ff9671);
+    }
+
+    .btn:hover::before {
+      background: #ff9671;
+    }
+  }
+}
+
+//desktop and large screen
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+  p {
+    width: 45ch !important;
+  }
+}
+
+//extralarge screen
+@media screen and (min-width: 1201px) {
+  p {
+    width: 50ch !important;
+  }
+}
