@@ -92,30 +92,52 @@ var myFullpage = new fullpage("#fullpage", {
       .fromTo(
         titleLetter,
         0.5,
-        { y: "50", opacity: 0 },
+        { y: random(-50, 50), opacity: 0 },
         { y: 0, opacity: 1 },
-        "-=0.4"
+        "-=0.3"
       )
       .fromTo(
         titleBtn,
         0.5,
-        { scale: "0.1", opacity: 0 },
-        { scale: 1, opacity: 1 },
-        "-=0.8"
+        {
+          x: random(-50, 50),
+          y: random(-50, 50),
+          z: random(-50, 50),
+          scale: 0,
+          opacity: 0,
+        },
+        { x: 0, y: 0, z: 0, scale: 1, opacity: 1 },
+        "-=0.35"
       )
-      .fromTo(interestHead, 0.5, { y: "-50", opacity: 0 }, { y: 0, opacity: 1 })
+      .fromTo(
+        interestHead,
+        0.5,
+        { y: "-50", opacity: 0 },
+        { y: 0, opacity: 1 },
+        "-=0.3"
+      )
       .fromTo(
         interestCard,
         0.5,
-        { x: "-50", opacity: 0 },
-        { x: "0", opacity: 1 },
-        "-=0.5"
+        {
+          x: random(-50, 50),
+          y: random(-50, 50),
+          z: random(-50, 50),
+          opacity: 0,
+        },
+        { x: 0, y: 0, z: 0, opacity: 1 },
+        "-=0.4"
       )
       .fromTo(
         interestCard2,
         0.5,
-        { x: "50", opacity: 0 },
-        { x: "0", opacity: 1 },
+        {
+          x: random(-50, 50),
+          y: random(-50, 50),
+          z: random(-50, 50),
+          opacity: 0,
+        },
+        { x: 0, y: 0, z: 0, opacity: 1 },
         "-=0.5"
       )
       .fromTo(
@@ -127,7 +149,8 @@ var myFullpage = new fullpage("#fullpage", {
           z: random(-100, 100),
           opacity: 0,
         },
-        { x: 0, y: 0, z: 0, opacity: 1 }
+        { x: 0, y: 0, z: 0, opacity: 1 },
+        "-=1"
       )
       .fromTo(
         socialBtn,
@@ -145,7 +168,7 @@ var myFullpage = new fullpage("#fullpage", {
           opacity: 1,
           yoyo: true,
         },
-        "-=0.8"
+        "-=1"
       )
   },
   // afterLoad: function (origin, destination, direction) {},
