@@ -180,10 +180,6 @@ h4 {
   background: #4181ee;
 }
 
-.card:last-child {
-  background: #673ab7;
-}
-
 .card-title {
   margin-top: 0;
   font-size: 16px;

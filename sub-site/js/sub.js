@@ -17,6 +17,12 @@ anime.timeline({ loop: true }).add({
   },
 })
 
+//fnction random
+
+function random(min, max) {
+  return Math.random() * (max - min) + min
+}
+
 //fullpage js
 //I advise you to try and find the license key and use it else you will be the one that have to face license problem not me
 
@@ -70,7 +76,78 @@ var myFullpage = new fullpage("#fullpage", {
   lazyLoading: true,
 
   //events
-  // onLeave: function (origin, destination, direction) {},
+  onLeave: function (origin, destination, direction) {
+    const section = destination.item
+    const title = section.querySelector("h2")
+    const titleLetter = section.querySelectorAll(".bodyContainer p")
+    const titleBtn = section.querySelector(".center .btn")
+    const tl = new TimelineMax({ delay: 0.4 })
+    const interestCard = section.querySelector(".card")
+    const interestCard2 = section.querySelector("#card2")
+    const interestHead = section.querySelector("h4")
+    const socialHeader = section.querySelector("#socialHeader")
+    const socialBtn = section.querySelector("#socialMedia")
+
+    tl.fromTo(title, 0.5, { y: "50", opacity: 0 }, { y: 0, opacity: 1 })
+      .fromTo(
+        titleLetter,
+        0.5,
+        { y: "50", opacity: 0 },
+        { y: 0, opacity: 1 },
+        "-=0.4"
+      )
+      .fromTo(
+        titleBtn,
+        0.5,
+        { scale: "0.1", opacity: 0 },
+        { scale: 1, opacity: 1 },
+        "-=0.8"
+      )
+      .fromTo(interestHead, 0.5, { y: "-50", opacity: 0 }, { y: 0, opacity: 1 })
+      .fromTo(
+        interestCard,
+        0.5,
+        { x: "-50", opacity: 0 },
+        { x: "0", opacity: 1 },
+        "-=0.5"
+      )
+      .fromTo(
+        interestCard2,
+        0.5,
+        { x: "50", opacity: 0 },
+        { x: "0", opacity: 1 },
+        "-=0.5"
+      )
+      .fromTo(
+        socialHeader,
+        0.8,
+        {
+          x: random(-100, 100),
+          y: random(-100, 100),
+          z: random(-100, 100),
+          opacity: 0,
+        },
+        { x: 0, y: 0, z: 0, opacity: 1 }
+      )
+      .fromTo(
+        socialBtn,
+        0.8,
+        {
+          x: random(-100, 100),
+          y: random(-100, 100),
+          z: random(-100, 100),
+          opacity: 0,
+        },
+        {
+          x: 0,
+          y: 0,
+          z: 0,
+          opacity: 1,
+          yoyo: true,
+        },
+        "-=0.8"
+      )
+  },
   // afterLoad: function (origin, destination, direction) {},
   // afterRender: function () {},
   // afterResize: function (width, height) {},
