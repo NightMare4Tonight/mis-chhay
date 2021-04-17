@@ -214,6 +214,20 @@ h5 {
       flex-wrap: wrap;
 }
 
+#img1 {
+  margin-top: 15px;
+  margin-left: 10px;
+  width: 300px;
+  height: 150px;
+}
+
+#img4 {
+  width: 450px;
+  height: 280px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: #9c1b4e !important;
@@ -465,7 +479,7 @@ h5 {
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .container .bodyContainer p {
-    font-size: 1.8em !important;
+    font-size: 1.2em !important;
     width: 45ch !important;
   }
   .center {
