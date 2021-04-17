@@ -31,7 +31,7 @@ var myFullpage = new fullpage("#fullpage", {
   navigationPosition: "right",
   navigationTooltips: ["Home", "Lesson", "Interest", "Social Media"],
   showActiveTooltip: true,
-  slidesNavigation: false,
+  slidesNavigation: true,
   slidesNavPosition: "bottom",
 
   //Scrolling

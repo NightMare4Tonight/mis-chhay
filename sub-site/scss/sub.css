@@ -170,7 +170,7 @@ h4 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #fff;
-  margin: 20px;
+  margin: 35px;
   -webkit-box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
           box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
   border-radius: 5px;
@@ -198,9 +198,35 @@ h4 {
   line-height: 1.5;
 }
 
+h5 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.slideWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
   background: #9c1b4e !important;
+}
+
+.fp-controlArrow {
+  display: none !important;
+}
+
+.fp-tooltip {
+  color: #161918 !important;
+  font-weight: bold !important;
+  font-size: 1em !important;
 }
 
 #socialHeader {
