@@ -133,17 +133,74 @@ body {
   background: linear-gradient(45deg, #845ec2, #d65db1, #ff6f91, #ff9671, #ffc75f, #f9f871);
 }
 
+#section1 {
+  background: linear-gradient(45deg, #161918, #3d403f, #686b6a, #969a99, #c8cccb);
+}
+
+#section2 {
+  background: linear-gradient(45deg, #0df5a8, #00dcb7, #00c1c2, #00a5c5, #0088c0, #006cb2);
+}
+
 #section3 {
   background: linear-gradient(45deg, #1b4f5b, #33607a, #596e94, #867aa8, #b486b0, #df93af);
 }
 
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: #10548f !important;
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #4148a3;
 }
 
-.fp-viewing-section1 #fp-nav ul li a span {
-  background: red !important;
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.card {
+  max-width: 280px;
+  min-height: 250px;
+  background: #02b875;
+  padding: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #fff;
+  margin: 20px;
+  -webkit-box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+          box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+
+.card:nth-child(2) {
+  background: #4181ee;
+}
+
+.card:last-child {
+  background: #673ab7;
+}
+
+.card-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+
+.card-content {
+  font-size: 0.9rem;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #9c1b4e !important;
 }
 
 #socialHeader {
@@ -154,8 +211,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  left: 61.5vw;
-  top: 20vh;
+  left: 75vw;
+  top: 22vh;
   min-height: 100vh;
   -webkit-transform: rotate(-25deg) skew(25deg);
           transform: rotate(-25deg) skew(25deg);
@@ -368,17 +425,20 @@ body {
   .center .btn:hover::before {
     background: #ff9671;
   }
+  #socialHeader {
+    left: 90vw !important;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  p {
+  .container .bodyContainer p {
     font-size: 1.2em !important;
     width: 35ch !important;
   }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  p {
+  .container .bodyContainer p {
     font-size: 1.8em !important;
     width: 45ch !important;
   }
@@ -398,17 +458,27 @@ body {
   .center .btn:hover::before {
     background: #ff9671;
   }
+  #socialHeader {
+    left: 70vw !important;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  p {
+  .container .bodyContainer p {
     width: 45ch !important;
+  }
+  #socialHeader {
+    left: 65vw !important;
   }
 }
 
 @media screen and (min-width: 1201px) {
-  p {
+  .container .bodyContainer p {
+    font-size: 1.8em !important;
     width: 50ch !important;
+  }
+  #socialHeader {
+    left: 60vw !important;
   }
 }
 /*# sourceMappingURL=sub.css.map */

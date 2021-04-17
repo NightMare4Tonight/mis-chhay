@@ -18,7 +18,7 @@ anime.timeline({ loop: true }).add({
 })
 
 //fullpage js
-//I advise you to try and find the license key and use it else you will be the one that have to face other problem not me
+//I advise you to try and find the license key and use it else you will be the one that have to face license problem not me
 
 var myFullpage = new fullpage("#fullpage", {
   //license
@@ -29,7 +29,7 @@ var myFullpage = new fullpage("#fullpage", {
   anchors: ["firstPage", "secondPage", "ThirdPage"],
   navigation: true,
   navigationPosition: "right",
-  navigationTooltips: ["Home", "secondSlide", "thirdSlide", "Social Media"],
+  navigationTooltips: ["Home", "Lesson", "Interest", "Social Media"],
   showActiveTooltip: true,
   slidesNavigation: false,
   slidesNavPosition: "bottom",

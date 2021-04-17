@@ -130,6 +130,8 @@ body {
   transition: all 0.3s linear;
 }
 
+//section color
+
 #section0 {
   background: -webkit-linear-gradient(
     45deg,
@@ -148,6 +150,29 @@ body {
     #ff9671,
     #ffc75f,
     #f9f871
+  );
+}
+
+#section1 {
+  background: linear-gradient(
+    45deg,
+    #161918,
+    #3d403f,
+    #686b6a,
+    #969a99,
+    #c8cccb
+  );
+}
+
+#section2 {
+  background: linear-gradient(
+    45deg,
+    #0df5a8,
+    #00dcb7,
+    #00c1c2,
+    #00a5c5,
+    #0088c0,
+    #006cb2
   );
 }
 
@@ -172,13 +197,51 @@ body {
   );
 }
 
-#fp-nav ul li a span,
-.fp-slidesNav ul li a span {
-  background: #10548f !important;
+//interest
+h4 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: #4148a3;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card {
+  max-width: 280px;
+  min-height: 250px;
+  background: #02b875;
+  padding: 30px;
+  box-sizing: border-box;
+  color: #fff;
+  margin: 20px;
+  box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+}
+.card:nth-child(2) {
+  background: #4181ee;
+}
+.card:last-child {
+  background: #673ab7;
+}
+.card-title {
+  margin-top: 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  padding-bottom: 10px;
+}
+.card-content {
+  font-size: 0.9rem;
+  letter-spacing: 0.7px;
+  line-height: 1.5;
 }
 
-.fp-viewing-section1 #fp-nav ul li a span {
-  background: red !important;
+//side nav color
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #9c1b4e !important;
 }
 
 //social media contact
@@ -187,8 +250,8 @@ body {
   justify-content: center;
   position: absolute;
   align-items: center;
-  left: 61.5vw;
-  top: 20vh;
+  left: 75vw;
+  top: 22vh;
   min-height: 100vh;
   transform: rotate(-25deg) skew(25deg);
   transform-style: preserve-3d;
@@ -392,21 +455,33 @@ body {
       background: #ff9671;
     }
   }
+
+  #socialHeader {
+    left: 90vw !important;
+  }
 }
 
 //for ipad/tablet
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  p {
-    font-size: 1.2em !important;
-    width: 35ch !important;
+  .container {
+    .bodyContainer {
+      p {
+        font-size: 1.2em !important;
+        width: 35ch !important;
+      }
+    }
   }
 }
 
 //small screen and laptop
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  p {
-    font-size: 1.8em !important;
-    width: 45ch !important;
+  .container {
+    .bodyContainer {
+      p {
+        font-size: 1.8em !important;
+        width: 45ch !important;
+      }
+    }
   }
   .center {
     top: 75vh;
@@ -428,18 +503,38 @@ body {
       background: #ff9671;
     }
   }
+  #socialHeader {
+    left: 70vw !important;
+  }
 }
 
 //desktop and large screen
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-  p {
-    width: 45ch !important;
+  .container {
+    .bodyContainer {
+      p {
+        width: 45ch !important;
+      }
+    }
+  }
+
+  #socialHeader {
+    left: 65vw !important;
   }
 }
 
 //extralarge screen
 @media screen and (min-width: 1201px) {
-  p {
-    width: 50ch !important;
+  .container {
+    .bodyContainer {
+      p {
+        font-size: 1.8em !important;
+        width: 50ch !important;
+      }
+    }
+  }
+
+  #socialHeader {
+    left: 60vw !important;
   }
 }
